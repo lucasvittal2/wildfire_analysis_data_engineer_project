@@ -1,0 +1,33 @@
+,Name,Type,Restrictions,Comment
+0,cou,string,atributo não nulo e composto por 3 caracteres maiúsculos,"código de 3 dígitos referente a um país.
+"
+1,country,string,atributo não nulo e composto por 3 caracteres maiúsculos,"Ser nome de país com código de referencia válida, com código referenciando ao nome correto e não possuir valor nulo
+"
+2,pol,string,atributo não nulo,"código de 3 dígitos referente a um tipo de gás poluente de efeito estufa.
+"
+3,pollutant,string,"atributo não nulo, com uma referência de código de poluente existente, com referência de código correta e com código de  tamanho 3 dígitos","Nome do gás poluente de efeito estufa.
+"
+4,var,string,atributo não nulo,código de referência da variável medida
+5,variable,string,possuir código de referência válido e correspondência correta entre nome e código de referência.,"designação da variável de medição das emissões do gás poluente.
+"
+6,yea,bigint,ser inteiro de 4 digítos e maior que 1990,"ano de medição das emissões do gás poluente de efeito estufa.
+"
+7,year,bigint,ser inteiro de 4 digítos e maior que 1990,"ano de medição das emissões do gás poluente de efeito estufa.
+"
+8,unit code,string,atributo não nulo,"código referente a unidade de medida utilizada na emissão do gás poluente de efeito estufa.
+"
+9,unit,string,atributo não nulo e com referência correta de código de unidade.,"designação da unidade de medida utilizada na medição de emissão do gás poluente de efeito estufa.
+"
+10,powercode code,bigint,ser um número positivo maior igual a 0,"código de referência ao expoente da potência de 10 da medida utilizada. Assim se o código é 6 temos mega unidade de medida, se é 3 é quilo unidades de medida e assim por diante...
+"
+11,powercode,string,valor não nulo,"designação literal a potência da unidade de medida utilizada.
+"
+12,reference period code,string,,"Valor desconhecido.
+"
+13,reference period,string,valor não nulo,"Valor desconhecido.
+"
+14,value,float,valor não nulo e maior igual a 0,Valor numérico referente a medição de emissão do gás poluente de efeito estufa
+15,flag codes,string,,"Valor desconhecido.
+"
+16,flags,string,,"Valor desconhecido.
+"

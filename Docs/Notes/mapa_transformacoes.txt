@@ -1,0 +1,27 @@
+ocde_carbon_emissions_per_country.csv:
+-	selecionar colunas “COU”, “Country”, “POL”, “Pollutant,Year,Unit,Value”
+-	“Pol“ → aplicar filtro para obter somente o valor GHG para este campo.
+-	“Unit“ → Aplicar filtro para obter somente  “Tonnes of CO2“ equivalent'	
+ocde_land_cover:
+-	Selecionar colunas “COU“, “Contry,Large“ subnational region, Variable, Land “Cover Classe“, “Year“,  “Unit code“, “Unit“, “Value“
+-	“Unit Code“ → Usar como filtro  para valor “KM2.
+emdat_disasters_impact_uiddS2NAC:
+-	Selecionar colunas “Dis No“ , “start Year“, “start month“, “start day“, end “Year“, “end month“,  “end day“, “Seq“, “Disaster Type“, “Country“, “ISO“, “Total Damages Adjusted ('000 US$)“ 
+-	“Disaster Type“ → Usar como campo filtro obtendo somente WildFire
+-	Reconstruction Costs Adjusted('000 US$) → substituir nulls por 0.
+-	Total Damages Adjusted ('000 US$) → substituir nulls por 0.
+gwis_burned_area_full_dataset_2002_2019
+-	Todos os campos originais vão ser utilizado, nenhum terá transformação
+-	Um novo campo será criado   a partir da soma de “Cropland_BA_hectares“, “Forest_BA_hectares“, “Grass_and_Shrubland_BA_hectares“, “Wetlands_BA_hectares“, “Settlement_BA_hectares“ , “Other_BA_hectares“. Este novo campo chamaremos de “Total_BA”.
+kaggle_city_temperature:
+-	Selecionar campos “Region“, “Country“, “City“, “Month“, “Day“, “Year“, “AvgTemperature“
+-	No campo “Year” eliminar os registros com valores menores que 1995.
+cd_climate_daily_canada_per_state:
+-	Selecionar campos “CLIMATE_IDENTIFIER“ “ID“, “LOCAL_YEAR“, “LOCAL_MONTH“, “LOCAL_DAY,PROVINCE_CODE“, “MEAN_TEMPERATURE“
+-	VMEAN_TEMPERATURE“ - > Eliminar registros onde este valor esteja nulo	
+kaggle_US_average_monthly_temperature_by_state_1950_2022 :
+-	Selecionar “month“,“year“,“state,average_temp“,“monthly_mean_from_1901_to_2000“
+-	Transformar escala dos campos “average_temp“ e “monthly_mean_from_1901_to_2000“ para graus celsius.	
+ncei_hawaii_kahului_avg_temperature:
+-	Selecionar todos os campos da tabela.
+-	Transformar campos “AvgTemperature“ e “Anomaly“ para graus celsius.

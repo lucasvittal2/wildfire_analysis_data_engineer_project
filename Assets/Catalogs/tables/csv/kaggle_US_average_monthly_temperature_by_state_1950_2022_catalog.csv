@@ -1,0 +1,15 @@
+,Name,Type,Restrictions,Comment
+0,month,int,Valor não nulo e de 1 à 12,"Valor numérico que representa o mês do ano em que foi feita a coleta dos dados.
+"
+1,year,string,Valor não nulo e maior que 150,"Valor referente ao ano em que foi feita a coleta dos dados.
+"
+2,state,string,Um nome de estado pertencente ao território dos EUA,"Designação do estado onde foi feita a ferição de temperatura média mensal.
+"
+3,average_temp,float,Valor decimal não nulo de -68°F à 92°F ,"Valor numérico referente a temperatura média mensal inferida.
+"
+4,monthly_mean_from_1901_to_2000,string,Valor decimal não nulo de -68°F à 92°F ,"Valor médio base temperatura cosiderando o período de 1901 à 2000.
+"
+5,centroid_lon,float,valor numérico compreendido no intervalo -180 à 180.,"Valor numérico referente a coordenada latitudinal da estação climática que realizou a coleta dos dados.
+"
+6,centroid_lat,float,valor numérico compreendido no intervalo -90 à 90.,"Valor numérico referente a coordenada longitudinal da estação climática que realizou a coleta dos dados.
+"

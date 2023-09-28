@@ -1,0 +1,21 @@
+Lista tabelas, fontes que efetivamente estamos utilizando:
+
+ - ocde_carbon_emission_per_country: carbon_emission_per_country_ocde https://stats.oecd.org/Index.aspx?DataSetCode=air_ghg
+
+ - ocde_land_cover: https://stats.oecd.org/Index.aspx?DataSetCode=LAND_COVER
+
+ - mb_avg_preciptation_per_year: https://data.worldbank.org/indicator/AG.LND.PRCP.MM?end=2020&start=1961
+
+ - emdat_disasters_impact_uiddS2NAC: https://public.emdat.be/data
+
+ - gwis_burned_area_full_dataset_2002_2019: https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads
+
+ - kaggle_city_temperature: https://www.kaggle.com/datasets/subhamjain/temperature-of-all-countries-19952020
+ 
+ - cd_climate_daily_canada_per_state: https://climatedata.ca/download/#station-download
+ 
+ - kaggle_US_average_monthly_temperature_by_state_1950_2022: https://www.kaggle.com/datasets/justinrwong/average-monthly-temperature-by-us-state
+ 
+ - ncei_hawaii_kahului_avg_temperature: https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/city/time-series/USW00022516
+
+ - ncei_mean_global_temperatues_1850_2023_land_sea: https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies/anomalies

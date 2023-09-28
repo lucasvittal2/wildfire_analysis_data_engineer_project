@@ -1,0 +1,105 @@
+[
+    {
+      "Name": "cou",
+      "Type": "string",
+      "Restrictions":"atributo não nulo e composto por 3 caracteres maiúsculos",
+      "Comment": "código de 3 dígitos referente a um país.\n"
+    },
+    {
+      "Name": "country",
+      "Type": "string",
+      "Restrictions":"atributo não nulo e composto por 3 caracteres maiúsculos",
+      "Comment": "Ser nome de país com código de referencia válida, com código referenciando ao nome correto e não possuir valor nulo\n"
+    },
+    {
+      "Name": "pol",
+      "Type": "string",
+      "Restrictions":"atributo não nulo",
+      "Comment": "código de 3 dígitos referente a um tipo de gás poluente de efeito estufa.\n"
+    },
+    {
+      "Name": "pollutant",
+      "Type": "string",
+      "Restrictions": "atributo não nulo, com uma referência de código de poluente existente, com referência de código correta e com código de  tamanho 3 dígitos",
+      "Comment": "Nome do gás poluente de efeito estufa.\n"
+    },
+    {
+      "Name": "var",
+      "Type": "string",
+      "Restrictions": "atributo não nulo",
+      "Comment": "código de referência da variável medida"
+    },
+    {
+      "Name": "variable",
+      "Type": "string",
+      "Restrictions": "possuir código de referência válido e correspondência correta entre nome e código de referência.",
+      "Comment": "designação da variável de medição das emissões do gás poluente.\n"
+    },
+    {
+      "Name": "yea",
+      "Type": "bigint",
+      "Restrictions": "ser inteiro de 4 digítos e maior que 1990",
+      "Comment": "ano de medição das emissões do gás poluente de efeito estufa.\n"
+    },
+    {
+      "Name": "year",
+      "Type": "bigint",
+      "Restrictions": "ser inteiro de 4 digítos e maior que 1990",
+      "Comment": "ano de medição das emissões do gás poluente de efeito estufa.\n"
+    },
+    {
+      "Name": "unit code",
+      "Type": "string",
+      "Restrictions": "atributo não nulo",
+      "Comment": "código referente a unidade de medida utilizada na emissão do gás poluente de efeito estufa.\n"
+    },
+    {
+      "Name": "unit",
+      "Type": "string",
+      "Restrictions": "atributo não nulo e com referência correta de código de unidade.",
+      "Comment": "designação da unidade de medida utilizada na medição de emissão do gás poluente de efeito estufa.\n"
+    },
+    {
+      "Name": "powercode code",
+      "Type": "bigint",
+      "Restrictions": "ser um número positivo maior igual a 0",
+      "Comment": "código de referência ao expoente da potência de 10 da medida utilizada. Assim se o código é 6 temos mega unidade de medida, se é 3 é quilo unidades de medida e assim por diante...\n"
+    },
+    {
+      "Name": "powercode",
+      "Type": "string",
+      "Restrictions": "valor não nulo",
+      "Comment": "designação literal a potência da unidade de medida utilizada.\n"
+    },
+    {
+      "Name": "reference period code",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Valor desconhecido.\n"
+    },
+    {
+      "Name": "reference period",
+      "Type": "string",
+      "Restrictions": "valor não nulo",
+      "Comment": "Valor desconhecido.\n"
+    },
+    {
+      "Name": "value",
+      "Type": "float",
+      "Restrictions": "valor não nulo e maior igual a 0",
+      "Comment": "Valor numérico referente a medição de emissão do gás poluente de efeito estufa"
+      
+    },
+    {
+      "Name": "flag codes",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Valor desconhecido.\n"
+    },
+    {
+      "Name": "flags",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Valor desconhecido.\n"
+    }
+  ]

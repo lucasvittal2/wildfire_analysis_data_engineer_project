@@ -1,0 +1,14 @@
+[
+    {
+        "Name": "Year",
+        "Type": "bigint",
+        "Restrictions": "Valor não nulo maior ou igual à 185001",
+        "Comment": "Valor numérico referente ao ano e mês do registro relacionado a temperatura média do planeta.\n"
+      },
+      {
+        "Name": "Anomaly",
+        "Type": "float",
+        "Restrictions": "valor não nulo entre -10ºC e 10ºC;",
+        "Comment": "Valor referente  ao desvio da média acumulada de 1850-2000 no corrente mês. Sendo assim se um registro é datado de 201102, a diferença entre a média da temperatura aferida nessa data e a média do acumulado de 1850-2000 no mês de fevereiro será o valor desse campo.\n"
+      }
+]

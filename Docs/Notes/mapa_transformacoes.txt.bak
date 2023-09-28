@@ -1,0 +1,87 @@
+ocde_carbon_emissions_per_country.csv:
+
+selecionar colunas COU, Country, POL, Pollutant,Year,Unit,Value
+	
+	- Pol -> aplicar filtro para obter somente GHG
+	- Unit -> Aplicar filtro para obter somente 'Tonnes of CO2 equivalent'
+	
+	- COU-> sem transformação
+	- Country -> sem transformação
+	- Pollutant -> sem transformação
+	- Value-> sem transformação
+	
+ocde_land_cover:
+
+	- Selecionar colunas COU,Contry,Large subnational region, Variable, Land Cover Classe,Year, Unit code,Unit, Value
+	- Unit Code -> Usar como filtro para obter valores em KM2
+	
+	- COU-> sem transformação
+	- Country -> sem transformação
+	- Large subnational region ->  sem transformação
+	- Variable-> sem transformação
+	- Land Cover Classe-> sem transformação
+	- Unit -> sem transformação
+	- Value-> sem transformação
+	
+
+emdat_disasters_impact_uiddS2NAC:
+
+ - Selecionar colunas Dis No,Year,Seq,Disaster Type,Country, ISO,No Injured, No Affected, No homeless, Reconstruction Costs Adjusted('000 US$), Total Damages Adjusted ('000 US$) 
+ 
+ 
+ 
+	- Disaster Type-> Usar como campo filtro obtendo somente WildFire
+	No Injured -> substituir nulls por 0.
+	No Affected -> substituir nulls por 0.
+	No homeless -> substituir nulls por 0.
+	Reconstruction Costs Adjusted('000 US$) -> substituir nulls por 0.
+	Total Damages Adjusted ('000 US$) -> substituir nulls por 0.
+ 
+	- Dis No -> sem transformação
+	- Year -> sem transformação
+	- Seq -> sem transformação
+	- Country -> sem transformação
+	- ISO -> Sem transformação
+	
+	
+	
+gwis_burned_area_full_dataset_2002_2019
+
+	-Todos os campos originais vão ser utilizado, nehum terá transformação
+	- a partir de Cropland_BA_hectares,Forest_BA_hectares,Grass_and_Shrubland_BA_hectares,Wetlands_BA_hectares,Settlement_BA_hectares,Other_BA_hectares -> Total_BA pela soma dos campos originais
+	
+	
+kaggle_city_temperature:
+	
+	- Selecionar campos Region, Country, City, Month, Day, Year, AvgTemperature
+	- No campo year eliminar os registros com valores menores que 1995.
+
+cd_climate_daily_canada_per_state
+
+	- Selecionar campos CLIMATE_IDENTIFIER ,ID, LOCAL_YEAR, LOCAL_MONTH, LOCAL_DAY,PROVINCE_CODE,MEAN_TEMPERATURE
+	
+	
+
+	- MEAN_TEMPERATURE - > Eliminar registros onde este valor esteja nulo
+	
+	
+	- CLIMATE_IDENTIFIER > sem transformação
+	- ID -> sem transformação
+	- LOCAL_YEAR -> sem transformação
+	- LOCAL_MONTH -> sem transformação
+	- LOCAL_DAY ->  sem transformação
+	- PROVINCE_CODE -> sem transformação
+	
+kaggle_US_average_monthly_temperature_by_state_1950_2022
+
+  - selecionar month,year,state,average_temp,monthly_mean_from_1901_to_2000
+  - transformar escala de average_temp e monthly_mean_from_1901_to_2000 para celsius.
+	
+ncei_hawaii_kahului_avg_temperature
+
+ - selecionar todos os campos da tabela.
+ - transformar campos AvgTemperature e Anomaly para graus celsius.
+ 
+ 
+ 
+ as tabelas: ncei_hawaii_kahului_avg_temperature, kaggle_US_average_monthly_temperature_by_state_1950_2022,cd_climate_daily_canada_per_state,kaggle_city_temperature vão ser compiladas em uma tabela só.

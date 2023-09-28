@@ -1,0 +1,218 @@
+[
+    {
+      "Name": "x",
+      "Type": "float",
+      "Restrictions": "valor numérico compreendido no intervalo -180 à 180.",
+      "Comment": "Valor numérico referente a coordenada latitudinal da estação climática que realizou a coleta dos dados.\n"
+    },
+    {
+      "Name": "y",
+      "Type": "float",
+      "Restrictions": "valor numérico compreendido no intervalo -90 à 90.",
+      "Comment": "Valor numérico referente a coordenada longitudinal da estação climática que realizou a coleta dos dados.\n"
+    },
+    {
+      "Name": "station_name",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Nome da estação climática que realizou a coleta dos dados climáticos desta tabela.\n"
+    },
+    {
+      "Name": "climate_identifier",
+      "Type": "bigint",
+      "Restrictions": "valor não nulo",
+      "Comment": "Valor identificador clima.\n"
+    },
+    {
+      "Name": "id",
+      "Type": "string",
+      "Restrictions": "Valor não nulo",
+      "Comment":"Identificador de cada registro desta tabela.Este campos é uma concatenação do campo de date com 'climate identifier' Este atributo é uma PK.\n"
+    },
+    {
+      "Name": "local_date",
+      "Type": "datetime",
+      "Restrictions": "Valor não nulo",
+      "Comment":"Valor referente a data e hora ao qual foi realizado o registro dos dados.\n"
+    },
+    {
+      "Name": "province_code",
+      "Type": "string",
+      "Restrictions": "Valor não nulo e com 2 caracteres",
+      "Comment":"Código referente a província onde os dados foram coletados"
+    },
+    {
+      "Name": "local_year",
+      "Type": "bigint",
+      "Restrictions": "Valor não nulo e maior que 2010",
+      "Comment":"Valor referente ao ano em que foi feita a coleta dos dados.\n"
+    },
+    {
+      "Name": "local_month",
+      "Type": "bigint",
+      "Restrictions": "Valor não nulo e de 1 à 12",
+      "Comment":"Valor numérico que representa o mês do ano em que foi feita a coleta dos dados.\n"
+    },
+    {
+      "Name": "local_day",
+      "Type": "bigint",
+      "Restrictions": "Valor não nulo e de 1 até o último dia do mês",
+      "Comment":"Valor numérico que representa o dia do mês em que foi feita a coleta dos dados.\n"
+    },
+    {
+      "Name": "mean_temperature",
+      "Type": "float",
+      "Restrictions": "Valor decimal não nulo de -90°C à 60°C ",
+      "Comment": "Valor numérico referente a temperatura média diária inferida.\n"
+    },
+    {
+      "Name": "mean_temperature_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "min_temperature",
+      "Type": "float",
+      "Restrictions": "Valor decimal não nulo de -90°C à 60°C ",
+      "Comment": "Valor numérico referente a temperatura mínima inferida no dia de aferição.\n"
+    },
+    {
+      "Name": "min_temperature_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "max_temperature",
+      "Type": "float",
+      "Restrictions": "Valor decimal não nulo de -90°C à 60°C ",
+      "Comment": "Valor numérico referente a temperatura máxima inferida no dia de aferição.\n"
+    },
+    {
+      "Name": "max_temperature_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "total_precipitation",
+      "Type": "float",
+      "Restrictions": "valor numérico maior que 0",
+      "Comment": "total precipitação registrado no dia de aferição dos dados"
+    },
+    {
+      "Name": "total_precipitation_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "total_rain",
+      "Type": "float",
+      "Restrictions": "valor numérico maior que 0",
+      "Comment": "total volume de chuva registrado no dia de aferição dos dados"
+    },
+    {
+      "Name": "total_rain_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "total_snow",
+      "Type": "float",
+      "Restrictions": "valor numérico maior que 0",
+      "Comment": "total do quanto nevou registrado no dia de aferição dos dados"
+    },
+    {
+      "Name": "total_snow_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "snow_on_ground",
+      "Type": "bigint",
+      "Restrictions": "valor numérico maior que 0",
+      "Comment": "total acúmulo de neve no solo registrado no dia de aferição dos dados"
+    },
+    {
+      "Name": "snow_on_ground_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "direction_max_gust",
+      "Type": "string",
+      "Restrictions": "valor categórico de 1 a 36",
+      "Comment": "Valor categórico que representa a direção do vento de maior intesidade registrada num dia.\n"
+    },
+    {
+      "Name": "direction_max_gust_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "speed_max_gust",
+      "Type": "bigint",
+      "Restrictions": "valor numérico maior do que 0",
+      "Comment": "Valor numérico que representa a intensidade da maior velocidade de ventos  registrada num dia.\n"
+    },
+    {
+      "Name": "speed_max_gust_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "cooling_degree_days",
+      "Type": "int",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "cooling_degree_days_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "heating_degree_days",
+      "Type": "float",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "heating_degree_days_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "min_rel_humidity",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Valor mínimo de umidade resgistrado no dia.\n"
+    },
+    {
+      "Name": "min_rel_humidity_flag",
+      "Type": "int",
+      "Restrictions": "valor numérico de 0 a 100",
+      "Comment": "Valor mínimo de umidade relativa resgistrada no dia.\n"
+    },
+    {
+      "Name": "max_rel_humidity",
+      "Type": "string",
+      "Restrictions": "valor numérico de 0 a 100",
+      "Comment": "Valor máximo de umidade relativa resgistrada no dia.\n"
+    },
+    {
+      "Name": "max_rel_humidity_flag",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    }
+  ]

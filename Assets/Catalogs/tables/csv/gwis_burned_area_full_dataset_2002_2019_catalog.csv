@@ -1,0 +1,25 @@
+,Name,Type,Restrictions,Comment
+0,year,bigint,Valor não nulo e maior ou igual a 2002.,"Ano referente a data em que houve o registro de queimada.
+"
+1,month,bigint,Valor não nulo e de 1 a 12.,"Ano referente a data em que houve o registro de queimada.
+"
+2,gid_0,string,"Não nulo, 3 dígitos e código pertence a tabela ISO","Código de 3 dígitos atribuído unicamente a cada pais pela International Standard Organization.
+"
+3,country,string,Nome do país deve estár incluido num dos nomes da tabela ISO,"O país em que o desastre ocorreu ou teve impacto; com o nome e a grafia sendo retirados de uma lista padrão de nomes de países publicada pela Organização Internacional de Normalização (ISO). Se um desastre afetou mais de um país, haverá uma entrada para cada país.
+"
+4,gid_1,string,"Não nulo é possuir 6 dígitos, sendo os 3 primeiros o identificador iso do país.","Identificador único referente a uma região de um determinador país. Os 3 primeiros dígitos são o identificador ISO do país relativo ao registro, depois seguido de '.' e um identificador sequencial + '_1'.
+"
+5,region,string,,"Nome da região onde foi registrado o evento de queimada.  Região pode ser tanto um estado, uma cidade ou um povoado.
+"
+6,cropland_ba_hectares,bigint,null ou inteiro maior igual a 0.,"Valor numérico referente a quantidade de hectares queimados em terras agrícolas em decorrência de queimadas.
+ "
+7,forest_ba_hectares,bigint,null ou inteiro maior igual a 0.,"Valor numérico referente a quantidade de hectares queimados em florestas em decorrência de queimadas.
+ "
+8,grass_and_shrubland_ba_hectares,bigint,null ou inteiro maior igual a 0.,"Valor numérico referente a quantidade de hectares queimados em gramas ou matagais em decorrência de queimadas.
+ "
+9,wetlands_ba_hectares,bigint,null ou inteiro maior igual a 0.,"Valor numérico referente a quantidade de hectares queimados em zonas húmidas em decorrência de queimadas.
+ "
+10,settlement_ba_hectares,bigint,null ou inteiro maior igual a 0.,"Valor numérico referente a quantidade de hectares queimados em zonas povoadas em decorrência de queimadas.
+ "
+11,other_ba_hectares,bigint,null ou inteiro maior igual a 0.,"Valor numérico referente a quantidade de hectares queimados em outras zonas não especificadas em decorrência de queimadas.
+ "

@@ -1,0 +1,17 @@
+,Name,Type,Restrictions,Comment
+0,region,string,valor não nulo,"Designação nome do continente ao que se refere o registro.
+"
+1,country,string,valor não nulo,"Designação nome do país ao que se refere o registro.
+"
+2,state,string,,"Designação nome do estado/província ao que se refere o registro.Observação: Campo somente com valores nulos
+"
+3,city,string,valor não nulo e nome deve se referir a uma cidade que existe,"Designação nome da cidade onde foi feito o registro de temperatura média diária
+"
+4,month,bigint,Numero inteiro de 1 à 12 e não nulo,"Valor numérico que representa o mês ao qual foi efetuado o registro de temperatura média diária.
+"
+5,day,bigint,"Valor não nulo, inteiro e no intervalo referente aos dias presente no mês correspondente","Valor numérico referente ao dia ao qual foi feito o registro de temperatura média diária.
+"
+6,year,bigint,"Valor não nulo, inteiro e no intervalo de 1995 até o corrente ano.","Valor numérico referente ao ano ao qual foi feito o registro de temperatura média diária.
+"
+7,avgtemperature,float,Valor decimal não nulo de -90°C à 60°C ,"Valor numérico referente a temperatura média diária inferida.
+"

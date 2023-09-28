@@ -1,0 +1,127 @@
+[
+    {
+        "Name": "cou",
+        "Type": "string",
+        "Restrictions":"atributo não nulo e composto por 3 caracteres maiúsculos",
+        "Comment": "código de 3 dígitos referente a um país.\n"
+      },
+      {
+        "Name": "country",
+        "Type": "string",
+        "Restrictions":"Ser nome de país com código de referencia válida, com código referenciando ao nome correto e não possuir valor nulo",
+        "Comment": "designação nome dos país\n"
+      },
+      {
+        "Name": "small_subnational_region",
+        "Type": "string",
+        "Restrictions":"sempre  com valor 'NA'",
+        "Comment": "Código identificador de um  município criado pela OCDE. Considerando a granularidade requerida na obtenção deste dado, o valor será  sempre NA, pois foi requerido baixar o dado com granularidade até estado/província\n"
+      },
+      {
+        "Name": "small subnational region",
+        "Type": "string",
+        "Restrictions":"sempre com valor 'NA' ",
+        "Comment": "Designiação nome cidade\n"
+      },  {
+        "Name": "large_subnational_region",
+        "Type": "string",
+        "Restrictions":"valor não nulo",
+        "Comment": "Código criado pela OCDE para referenciar um estado/provincia de um país\n"
+      },
+      {
+        "Name": "large subnational region",
+        "Type": "string",
+        "Restrictions":"Dado o campo Country, o valor desse campo desse ser uma cidade que de  fato pertença ao país no campo country do registro.",
+        "Comment": "Designação do nome do estado/provincia\n"
+      },
+      {
+        "Name": "meas",
+        "Type": "string",
+        "Restrictions":"valor não nulo",
+        "Comment": "Código de referência a medida usada para aferir a area de cobertura de uma vegetação"
+      },
+      {
+        "Name": "measure",
+        "Type": "string",
+        "Restrictions":"Estar devidamente referenciado por um código de unidade de medida",
+        "Comment": "Designação unidade de medida usada para medir area de cobertura de uma vegetação\n"
+      },
+      {
+        "Name": "variable",
+        "Type": "string",
+        "Restrictions":"Valor não nulo",
+        "Comment": "Código de referência a um tipo de vegetação\n"
+      },
+      {
+        "Name": "land cover class",
+        "Type": "string",
+        "Restrictions":"Estar devidamente referenciado por um código de tipo de vegetação.",
+        "Comment": "Designação do nome do tipo de vegetação.\n"
+      },
+      {
+        "Name": "yea",
+        "Type": "bigint",
+        "Restrictions":" Ser maior que 1990 e não nulo",
+        "Comment": "Ano em que foi registrado o dado a cerca de cobertura de vegetação.\n"
+      },
+      {
+        "Name": "year",
+        "Type": "bigint",
+        "Restrictions":" Ser maior que 1990 e não nulo",
+        "Comment": "Ano em que foi registrado o dado a cerca de cobertura de vegetação.\n"
+      },
+      {
+        "Name": "unit code",
+        "Type": "string",
+        "Restrictions": "atributo não nulo",
+        "Comment": "código referente a unidade de medida utilizada na medida de cobertura de vegetação."
+      },
+      {
+        "Name": "unit",
+        "Type": "string",
+        "Restrictions": "atributo não nulo e com referência correta de código de unidade.",
+        "Comment": "designação da unidade de medida utilizada na medição de emissão do gás poluente de efeito estufa."
+      },
+      {
+        "Name": "powercode code",
+        "Type": "bigint",
+        "Restrictions": "ser um número positivo maior igual a 0",
+        "Comment": "código de referência ao expoente da potência de 10 da medida utilizada. Assim se o código é 6 temos mega unidade de medida, se é 3 é quilo unidades de medida e assim por diante..."
+      },
+      {
+        "Name": "powercode",
+        "Type": "string",
+        "Restrictions": "valor não nulo",
+        "Comment": "designação literal a potência da unidade de medida utilizada."
+      },
+      {
+        "Name": "reference period code",
+        "Type": "string",
+        "Restrictions": "",
+        "Comment": "Valor desconhecido."
+      },
+      {
+        "Name": "reference period",
+        "Type": "string",
+        "Restrictions": "valor não nulo",
+        "Comment": "Valor desconhecido."
+      },
+      {
+        "Name": "value",
+        "Type": "float",
+        "Restrictions": "valor não nulo e maior que zero",
+        "Comment": "Valor numérico referente a medida da cobertura de vegetação."
+      },
+      {
+        "Name": "flag codes",
+        "Type": "string",
+        "Restrictions": "",
+        "Comment": "Valor desconhecido."
+      },
+      {
+        "Name": "flags",
+        "Type": "string",
+        "Restrictions": "",
+        "Comment": "Valor desconhecido."
+      }
+]

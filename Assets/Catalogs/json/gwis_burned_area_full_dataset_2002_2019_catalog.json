@@ -1,0 +1,74 @@
+[
+    {
+      "Name": "year",
+      "Type": "bigint",
+      "Restrictions": "Valor não nulo e maior ou igual a 2002.",
+      "Comment": "Ano referente a data em que houve o registro de queimada.\n"
+    },
+    {
+      "Name": "month",
+      "Type": "bigint",
+      "Restrictions": "Valor não nulo e de 1 a 12.",
+      "Comment": "Ano referente a data em que houve o registro de queimada.\n"
+    },
+    {
+      "Name": "gid_0",
+      "Type": "string",
+      "Restrictions":"Não nulo, 3 dígitos e código pertence a tabela ISO",
+      "Comment":"Código de 3 dígitos atribuído unicamente a cada pais pela International Standard Organization.\n"
+    },
+    {
+      "Name": "country",
+      "Type": "string",
+      "Restrictions":"Nome do país deve estár incluido num dos nomes da tabela ISO",
+      "Comment":"O país em que o desastre ocorreu ou teve impacto; com o nome e a grafia sendo retirados de uma lista padrão de nomes de países publicada pela Organização Internacional de Normalização (ISO). Se um desastre afetou mais de um país, haverá uma entrada para cada país.\n"
+    },
+    {
+      "Name": "gid_1",
+      "Type": "string",
+      "Restrictions": "Não nulo é possuir 6 dígitos, sendo os 3 primeiros o identificador iso do país.",
+      "Comment": "Identificador único referente a uma região de um determinador país. Os 3 primeiros dígitos são o identificador ISO do país relativo ao registro, depois seguido de '.' e um identificador sequencial + '_1'.\n"
+    },
+    {
+      "Name": "region",
+      "Type": "string",
+      "Restrictions":"",
+      "Comment":"Nome da região onde foi registrado o evento de queimada.  Região pode ser tanto um estado, uma cidade ou um povoado.\n"
+    },
+    {
+      "Name": "cropland_ba_hectares",
+      "Type": "bigint",
+      "Restrictions": "null ou inteiro maior igual a 0.",
+      "Comment": "Valor numérico referente a quantidade de hectares queimados em terras agrícolas em decorrência de queimadas.\n "
+    },
+    {
+      "Name": "forest_ba_hectares",
+      "Type": "bigint",
+      "Restrictions": "null ou inteiro maior igual a 0.",
+      "Comment": "Valor numérico referente a quantidade de hectares queimados em florestas em decorrência de queimadas.\n "
+    },
+    {
+      "Name": "grass_and_shrubland_ba_hectares",
+      "Type": "bigint",
+      "Restrictions": "null ou inteiro maior igual a 0.",
+      "Comment": "Valor numérico referente a quantidade de hectares queimados em gramas ou matagais em decorrência de queimadas.\n "
+    },
+    {
+      "Name": "wetlands_ba_hectares",
+      "Type": "bigint",
+      "Restrictions": "null ou inteiro maior igual a 0.",
+      "Comment": "Valor numérico referente a quantidade de hectares queimados em zonas húmidas em decorrência de queimadas.\n "
+    },
+    {
+      "Name": "settlement_ba_hectares",
+      "Type": "bigint",
+      "Restrictions": "null ou inteiro maior igual a 0.",
+      "Comment": "Valor numérico referente a quantidade de hectares queimados em zonas povoadas em decorrência de queimadas.\n "
+    },
+    {
+      "Name": "other_ba_hectares",
+      "Type": "bigint",
+      "Restrictions": "null ou inteiro maior igual a 0.",
+      "Comment": "Valor numérico referente a quantidade de hectares queimados em outras zonas não especificadas em decorrência de queimadas.\n "
+    }
+  ]

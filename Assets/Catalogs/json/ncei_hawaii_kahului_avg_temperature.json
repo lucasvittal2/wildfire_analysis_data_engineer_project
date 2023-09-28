@@ -1,0 +1,45 @@
+[
+    {
+    "Name": "region",
+    "Type": "string",
+    "Restrictions": "valor não nulo",
+    "Comment": "Designação nome do continente ao que se refere o registro.\n"
+    },
+    {
+    "Name": "country",
+    "Type": "string",
+    "Restrictions": "valor não nulo",
+    "Comment": "Designação nome do país ao que se refere o registro.\n"
+    },
+    {
+    "Name": "state",
+    "Type": "string",
+    "Restrictions": "",
+    "Comment": "Designação nome do estado/província ao que se refere o registro.Observação: Campo somente com valores nulos\n"
+    },
+    {
+    "Name": "city",
+    "Type": "string",
+    "Restrictions": "valor não nulo e nome deve se referir a uma cidade que existe",
+    "Comment": "Designação nome da cidade onde foi feito o registro de temperatura média diária\n"
+    },
+    {
+      "Name": "date",
+      "Type": "date",
+      "Restrictions": "valor não nulo  e data válida",
+      "Comment": "data de resgistro da temperatura média diária.\n"
+  
+    },
+    {
+        "Name": "avgtemperature",
+        "Type": "float",
+        "Restrictions": "Valor decimal não nulo de -68°F à 92°F ",
+        "Comment": "Valor numérico referente a temperatura média diária inferida.\n"
+    },
+    {
+      "Name": "anomaly",
+      "Type": "float",
+      "Restrictions": "",
+      "Comment": "Diferença entre o valor mais recente e o valor corrente\n"
+    }
+  ]

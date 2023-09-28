@@ -1,0 +1,54 @@
+,Name,Type,Restrictions,Comment
+0,x,float,valor numérico compreendido no intervalo -180 à 180.,"Valor numérico referente a coordenada latitudinal da estação climática que realizou a coleta dos dados.
+"
+1,y,float,valor numérico compreendido no intervalo -90 à 90.,"Valor numérico referente a coordenada longitudinal da estação climática que realizou a coleta dos dados.
+"
+2,station_name,string,,"Nome da estação climática que realizou a coleta dos dados climáticos desta tabela.
+"
+3,climate_identifier,bigint,,"Valor identificador clima.
+"
+4,id,string,Valor não nulo,"Identificador de cada registro desta tabela. Este atributo é uma PK.
+"
+5,local_date,datetime,Valor não nulo,"Valor referente a data e hora ao qual foi realizado o registro dos dados.
+"
+6,province_code,string,Valor não nulo e com 2 caracteres,Código referente a província onde os dados foram coletados
+7,local_year,bigint,Valor não nulo e maior que 2010,"Valor referente ao ano em que foi feita a coleta dos dados.
+"
+8,local_month,bigint,Valor não nulo e de 1 à 12,"Valor numérico que representa o mês do ano em que foi feita a coleta dos dados.
+"
+9,local_day,bigint,Valor não nulo e de 1 até o último dia do mês,"Valor numérico que representa o dia do mês em que foi feita a coleta dos dados.
+"
+10,mean_temperature,float,Valor decimal não nulo de -90°C à 60°C ,"Valor numérico referente a temperatura média diária inferida.
+"
+11,mean_temperature_flag,string,,
+12,min_temperature,float,Valor decimal não nulo de -90°C à 60°C ,"Valor numérico referente a temperatura mínima inferida no dia de aferição.
+"
+13,min_temperature_flag,string,,
+14,max_temperature,float,Valor decimal não nulo de -90°C à 60°C ,"Valor numérico referente a temperatura máxima inferida no dia de aferição.
+"
+15,max_temperature_flag,string,,
+16,total_precipitation,float,valor numérico maior que 0,total precipitação registrado no dia de aferição dos dados
+17,total_precipitation_flag,string,,
+18,total_rain,float,valor numérico maior que 0,total volume de chuva registrado no dia de aferição dos dados
+19,total_rain_flag,string,,
+20,total_snow,float,valor numérico maior que 0,total do quanto nevou registrado no dia de aferição dos dados
+21,total_snow_flag,string,,
+22,snow_on_ground,bigint,valor numérico maior que 0,total acúmulo de neve no solo registrado no dia de aferição dos dados
+23,snow_on_ground_flag,string,,
+24,direction_max_gust,string,valor categórico de 1 a 36,"Valor categórico que representa a direção do vento de maior intesidade registrada num dia.
+"
+25,direction_max_gust_flag,string,,
+26,speed_max_gust,bigint,valor numérico maior do que 0,"Valor numérico que representa a intensidade da maior velocidade de ventos  registrada num dia.
+"
+27,speed_max_gust_flag,string,,
+28,cooling_degree_days,int,,
+29,cooling_degree_days_flag,string,,
+30,heating_degree_days,float,,
+31,heating_degree_days_flag,string,,
+32,min_rel_humidity,string,,"Valor mínimo de umidade resgistrado no dia.
+"
+33,min_rel_humidity_flag,int,valor numérico de 0 a 100,"Valor mínimo de umidade relativa resgistrada no dia.
+"
+34,max_rel_humidity,string,valor numérico de 0 a 100,"Valor máximo de umidade relativa resgistrada no dia.
+"
+35,max_rel_humidity_flag,string,,

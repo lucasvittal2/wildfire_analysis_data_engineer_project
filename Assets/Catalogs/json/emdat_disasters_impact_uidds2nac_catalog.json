@@ -1,0 +1,302 @@
+[
+    {
+      "Name": "dis no",
+      "Type": "string",
+      "Restrictions": "Valor não nulo.",
+      "Comment": "Este campo é um campo indentificador de cada linha desta tabela, portanto uma chave primária. Ele é uma composição dos campos 'year','seq' e 'iso'.\n"
+    },
+    {
+      "Name": "year",
+      "Type": "bigint",
+      "Restrictions": "valor não nulo e e maior que 1900",
+      "Comment": "ano em que foi efetuado o registro.\n"
+    },
+    {
+      "Name": "seq",
+      "Type": "bigint",
+      "Restrictions": "valor não nulo e maior que zero.",
+      "Comment": "Sequência numérica serve como identificador unico de um evento de disastre natural numa localidade é um dado ano.\n"
+    },
+    {
+      "Name": "glide",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "GLobal IDentifier denominado pela siglaGLIDE. Este é um código de identificação exclusivo globalmente comum para desastres, destinado a facilitar as ligações entre registros em diversos bancos de dados de desastres e sites de troca de informações sobre desastres, como por exemplo o ReliefWeb. Para Mais informações acesse 'www.glidenumber.net'.\n"
+    },
+    {
+      "Name": "disaster group",
+      "Type": "string",
+      "Restrictions": "Valor não nulo, categórico e só poder assumir os seguintes valores: 'Biological', 'Geophysical', 'Climatological', 'Hydrological', 'Meteorological' and 'Extra-terrestrial disasters'.",
+      "Comment": "Existem dois grupos principais de desastres são distinguidos no EM-DAT: desastres naturais e desastres tecnológicos. Este campo é automaticamente vinculado ao subgrupo do desastre e ao tipo de desastre. Existe um terceiro grupo, “Catástrofes complexas”, que inclui algumas situações de fome grave para as quais a seca não foi o principal factor causal.\n"
+    },
+    {
+      "Name": "disaster subgroup",
+      "Type": "string",
+      "Restrictions": "Valor não nulo, categórico e só poder assumir os seguintes valores: 'Natural','Technological' e 'Complex Disasters'.",
+      "Comment": "Existem dois grupos principais de desastres são distinguidos no EM-DAT: desastres naturais e desastres tecnológicos. Este campo é automaticamente vinculado ao subgrupo do desastre e ao tipo de desastre. Existe um terceiro grupo, “Catástrofes complexas”, que inclui algumas situações de fome grave para as quais a seca não foi o principal factor causal.\n"
+    },
+    {
+      "Name": "disaster type",
+      "Type": "string",
+      "Restrictions": "Valor não nulo, categórico e só poder assumir os seguintes valores: 'Drought','Storm', 'Epidemic','Flood','Volcanic activity','Industrial accident','Earthquake','Miscellaneous accident','Mass movement (dry)','Transport accident','Landslide','Wildfire','Insect infestation','Complex Disasters','Extreme temperature','Fog','Impact','Animal accident e 'Animal accident'.",
+      "Comment": "Em cada evento é identificado um tipo  principal de desastre. Esse campo está automaticamente relacionado ao subgrupo de desastres e ao grupo de desastres. Dois ou mais desastres podem estar relacionados (um desastre pode ocorrer como consequência de um evento principal). Por exemplo, um ciclone pode gerar uma inundação ou um deslizamento de terra; ou um terremoto pode fazer com que um gasoduto se rompa, causando um desastre ecológico. O tipo de desastre primário (ou evento desencadeador) é registrado primeiro, seguido pelos campos de Desastre Associado 1 e 2 para os secundários.\n"
+    },
+    {
+      "Name": "disaster subtype",
+      "Type": "string",
+      "Restrictions":"",
+      "Comment":"Subdivisão do campo 'disaster type'.\n"
+    },
+    {
+      "Name": "disaster subsubtype",
+      "Type": "string",
+      "Restrictions":"",
+      "Comment":"Subdivisão do campo 'disaster type'.\n"
+    },
+    {
+      "Name": "event name",
+      "Type": "string",
+      "Restrictions":"",
+      "Comment":"Qualquer subdivisão adequada do subtipo de desastre (não aplicável a todos os subtipos de desastre).\n"
+    },
+    {
+      "Name": "country",
+      "Type": "string",
+      "Restrictions":"Nome do país deve estár incluido num dos nomes da tabela ISO",
+      "Comment":"O país em que o desastre ocorreu ou teve impacto; com o nome e a grafia sendo retirados de uma lista padrão de nomes de países publicada pela Organização Internacional de Normalização (ISO). Se um desastre afetou mais de um país, haverá uma entrada para cada país.\n"
+    },
+    {
+      "Name": "iso",
+      "Type": "string",
+      "Restrictions":"Não nulo, 3 dígitos e código pertence a tabela ISO",
+      "Comment":"Código de 3 dígitos atribuído unicamente a cada pais pela International Standard Organization.\n"
+    },
+    {
+      "Name": "region",
+      "Type": "string",
+      "Restrictions": "Ser uma das regiões válidas segundo a ISO: 'Northern Africa','Eastern Africa','Middle Africa','Southern Africa','Western Africa','Caribbean','Central America','South America','Northern America','Central Asia','Eastern Asia','South-eastern Asia','Southern Asia','Western Asia','Eastern Europe','Northern Europe','Southern Europe','Western Europe','Australia and New Zealand','Melanesia','Micronesia','Polynesia'.",
+      "Comment":"A região à qual o país pertence. Este campo é automaticamente vinculado ao país.\n"
+    },
+    {
+      "Name": "continent",
+      "Type": "string",
+      "Restrictions": "Ser um dos continente válidos: 'Africa', 'Asia', 'Americas', 'Europe','Oceania'.",
+      "Comment":"O continente ao qual o país pertence. Este campo é automaticamente vinculado ao país.\n"
+    },
+    {
+      "Name": "location",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment":"Especificação geográfica (por exemplo, nome de uma cidade, vila, departamento, província, estado ou distrito). Isto permite a análise subsequente da ocorrência e impacto de desastres por região, distrito ou qualquer outra fronteira administrativa subnacional.\n"
+    },
+    {
+      "Name": "origin",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment":"A origem desencadeadora do desastre (ou seja, fortes chuvas para uma inundação, seca para um incêndio florestal).\n"
+    },
+    {
+      "Name": "associated dis",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment":"Os efeitos ou consequências secundárias e/ou associadas de um evento primário (ou seja, deslizamento de terra devido a uma inundação, explosão após um terremoto, etc.)\n"
+    },
+    {
+      "Name": "associated dis2",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment":"Os efeitos ou consequências secundárias e/ou associadas de um evento primário (ou seja, deslizamento de terra devido a uma inundação, explosão após um terremoto, etc.)\n"
+    },
+    {
+      "Name": "ofda response",
+      "Type": "string",
+      "Restrictions": "Valores válidos: 'yes','no' ou null",
+      "Comment":"Se a OFDA respondeu ao disastre.\n"
+    },
+    {
+      "Name": "appeal",
+      "Type": "string",
+      "Restrictions":"Valores válidos: 'yes','no' ou null",
+      "Comment":"Se ouve requerimento de ajuda internacional dos países afetados pelo disastre  e quando ouve esse requerimento.\n"
+    },
+    {
+      "Name": "declaration",
+      "Type": "string",
+      "Restrictions": "Valores válidos: 'yes','no' ou null",
+      "Comment":"Declaração de estado de emergência ou se ouve requisição por ajuda internacional.\n"
+    },
+    {
+      "Name": "aid contribution ('000 us$)",
+      "Type": "string",
+      "Restrictions": "Valores válidos: 'yes','no' ou null",
+      "Comment": "O montante total (dado em 000'US$, valor actual, ou seja, valor no momento do relatório) da contribuição para actividades de ajuda imediata dadas ao país como resposta ao desastre (utilizando o Sistema de Acompanhamento Financeiro do OCHA de 1992 em diante) .\n"
+    },
+    {
+      "Name": "dis mag value",
+      "Type": "bigint",
+      "Restrictions": "",
+      "Comment":"Valor que diz respeito a magnitude do disastre natural.\n"
+    },
+    {
+      "Name": "dis mag scale",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment":"unidade de medida utilizada para aferir a magnitude do disastre natural.\n"
+    },
+    {
+      "Name": "latitude",
+      "Type": "float",
+      "Restrictions": "valor numérico compreendido no intervalo -180 à 180.",
+      "Comment": "Valor numérico referente a coordenada latitudinal da estação climática que realizou a coleta dos dados.\n"
+    },
+    {
+      "Name": "longitude",
+      "Type": "float",
+      "Restrictions": "valor numérico compreendido no intervalo -90 à 90.",
+      "Comment": "Valor numérico referente a coordenada longitudinal da estação climática que realizou a coleta dos dados.\n"
+    },
+    {
+      "Name": "local time",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Horário em que ocorreu o evento de disastre\n"
+    },
+    {
+      "Name": "river basin",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Nome das bacias hidrográficas da área afetada.\n"
+    },
+    {
+      "Name": "start day/month/year",
+      "Type": "bigint",
+      "Restrictions": "",
+      "Comment": "O ano em que o desastre ocorreu. Este valor está bem definida para todos os desastres de impacto repentino.\n"
+    },
+    {
+      "Name": "start month",
+      "Type": "bigint",
+      "Restrictions": "Ser um número de 1 a 12.",
+      "Comment": "O mês do ano em que ocorreu o desastre. Este valor está bem definida para todos os desastres de impacto repentino.\n"
+    },
+    {
+      "Name": "start day",
+      "Type": "bigint",
+      "Restrictions": "ser um dia válido no mês correspondente.",
+      "Comment": "o dia do mês em que ocorreu o disastre.Este valor está bem definida para todos os desastres de impacto repentino. Para situações de catástrofe que se desenvolvam gradualmente ao longo de um período de tempo mais longo (ou seja, seca) sem data de início, este campo pode ser deixado em branco.\n"
+    },
+    {
+      "Name": "end year",
+      "Type": "bigint",
+      "Restrictions": "",
+      "Comment": "O ano em que o disastre chegou ao fim.Este valor está bem definida para todos os desastres de impacto repentino.\n"
+    },
+    {
+      "Name": "end month",
+      "Type": "bigint",
+      "Restrictions": "Ser um número de 1 a 12.",
+      "Comment": "O mês do ano em que o disastre chegou ao fim.Este valor está bem definida para todos os desastres de impacto repentino.\n"
+    },
+    {
+      "Name": "end day",
+      "Type": "bigint",
+      "Restrictions": "ser um dia válido no mês correspondente.",
+      "Comment": "O dia do mês em que o disastre chegou ao fim.Este valor está bem definida para todos os desastres de impacto repentino. Para situações de desastre que terminem durante um período de tempo mais longo (ou seja, seca) sem data de conclusão definida, este campo pode ser deixado em branco.\n"
+    },
+    {
+      "Name": "total deaths",
+      "Type": "bigint",
+      "Restrictions": "Ser um valor mulo ou inteiro maior igual a 0.",
+      "Comment": "Número de falecimentos em decorrência do disastre ocorrido.\n"
+    },
+    {
+      "Name": "no injured",
+      "Type": "bigint",
+      "Restrictions": "",
+      "Comment": "Pessoas que sofrem lesões físicas, traumas ou doenças que requerem assistência médica imediata como resultado direto de um desastre.\n"
+    },
+    {
+      "Name": "no affected",
+      "Type": "bigint",
+      "Restrictions": "Ser um valor mulo ou inteiro maior igual a 0.",
+      "Comment": "Pessoas que necessitam de assistência imediata durante uma situação de emergência. O indicador afectado é frequentemente comunicado e amplamente utilizado por diferentes intervenientes para transmitir a extensão, o impacto ou a gravidade de uma catástrofe em termos não espaciais. A ambiguidade nas definições e os diferentes critérios e métodos de estimativa produzem números muito diferentes, que raramente são comparáveis.\n"
+    },
+    {
+      "Name": "no homeless",
+      "Type": "bigint",
+      "Restrictions": "",
+      "Comment": "Número de pessoas cujas casas foram destruídas ou fortemente danificadas e, portanto, necessitam de abrigo após um evento.\n"
+    },
+    {
+      "Name": "total affected",
+      "Type": "bigint",
+      "Restrictions":"Ser um valor mulo ou inteiro maior igual a 0.",
+      "Comment": "Nome das bacias hidrográficas da área afetada.\n"
+    },
+    {
+      "Name": "reconstruction costs ('000 us$)",
+      "Type": "string",
+      "Restrictions": "valor nulo ou  maior igual a 0",
+      "Comment": "Esses custos são para a reposição de ativos perdidos. Os custos de reconstrução são diferentes dos danos totais, uma vez que devem ter em conta os custos actuais de construção ou aquisição de bens, bem como o custo adicional das medidas de prevenção e mitigação para reduzir os danos causados ​​por desastres futuros.\n"
+    },
+    {
+      "Name": "reconstruction costs, adjusted ('000 us$)",
+      "Type": "string",
+      "Restrictions": "nulo ou maior que 0.",
+      "Comment": "Mesmo indicador que 'reconstruction costs ('000 us$)', porém com o valor do dolar atualizado para a cotação do ano de 2021.\n"
+    },
+    {
+      "Name": "insured damages ('000 us$)",
+      "Type": "string",
+      "Restrictions": "nulo ou maior que 0.",
+      "Comment": "Valores de perdas econômicos cobertos por seguradoras.\n"
+    },
+    {
+      "Name": "insured damages, adjusted ('000 us$)",
+      "Type": "string",
+      "Restrictions": "nulo ou maior que 0",
+      "Comment": "Mesmo indicador que 'insured damages ('000 us$)', porém com o valor do dolar atualizado para a cotação do ano de 2021.\n"
+    },
+    {
+      "Name": "total damages ('000 us$)",
+      "Type": "bigint",
+      "Restrictions": "nulo ou maior que 0.",
+      "Comment": "Um valor de todos os danos e perdas económicas direta ou indiretamente relacionados com o desastre. A informação pode incluir números de repartição por sectores: Social, Infraestruturas, Produção, Ambiente e outros (quando disponíveis).\n"
+    },
+    {
+      "Name": "total damages, adjusted ('000 us$)",
+      "Type": "bigint",
+      "Restrictions": "nulo ou maior que 0.",
+      "Comment": "Mesmo indicador que 'total damages ('000 us$)', porém com o valor do dolar atualizado para a cotação do ano de 2021.\n"
+    },
+    {
+      "Name": "cpi",
+      "Type": "double",
+      "Restrictions": "nulo ou maior que 0.",
+      "Comment": "Índice de Preços ao Consumidor. Usado para converter os danos (que são dados no momento em que ocorreu o desastre) para o valor atual em dólares americanos.\n"
+    },
+    {
+      "Name": "adm level",
+      "Type": "bigint",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "admin1 code",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "admin2 code",
+      "Type": "bigint",
+      "Restrictions": "",
+      "Comment": ""
+    },
+    {
+      "Name": "geo locations",
+      "Type": "string",
+      "Restrictions": "",
+      "Comment": "Especificação geográfica (por exemplo, nome de uma cidade, vila, departamento, província, estado ou distrito). Isto permite a análise subsequente da ocorrência e impacto de desastres por região, distrito ou qualquer outra fronteira administrativa subnacional.\n"
+    }
+]

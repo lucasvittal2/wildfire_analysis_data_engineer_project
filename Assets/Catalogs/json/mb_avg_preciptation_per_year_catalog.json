@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "countryname",
+    "Type": "string",
+    "Restrictions":"Ser nome de país com código de referencia válida, com código referenciando ao nome correto e não possuir valor nulo\n",
+    "Comment": "campo referente ao nome do país onde foi feita a medição de preciptação.\n"
+  },
+  {
+    "Name": "countrycode",
+    "Type": "string",
+    "Restrictions":"atributo não nulo e composto por 3 caracteres maiúsculos",
+    "Comment": "código de 3 dígitos referente a um país.\n"
+  },
+  {
+    "Name": "indicatorname",
+    "Type": "string",
+    "Restrictions":"atributo não nulo e existente na tabela de medidas de preciptação",
+    "Comment": "Nome da unidade de medida utilizada para medir a precipitação.\n"
+  },
+  {
+    "Name": "indicatorcode",
+    "Type": "string",
+    "Restrictions":"atributo não nulo",
+    "Comment": "Código referente a unidade de medida para medir a precipitação.\n"
+  },
+  {
+    "Name": "anual_measure_from_<YYYY>",
+    "Type": "float",
+    "Restrictions":"valores sempre devem ser maiores que 0",
+    "Comment": "Campo referente a média anual de precipitação de uma páis. O acrônimo <YYYY> é uma referência ao ano de medição, que pode ir de 1960 à 2022\n"
+  }
+]

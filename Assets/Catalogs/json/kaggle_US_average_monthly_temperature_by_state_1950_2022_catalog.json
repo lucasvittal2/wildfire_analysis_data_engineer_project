@@ -1,0 +1,44 @@
+[
+    {
+      "Name": "month",
+      "Type": "int",
+      "Restrictions": "Valor não nulo e de 1 à 12",
+      "Comment":"Valor numérico que representa o mês do ano em que foi feita a coleta dos dados.\n"
+    },
+    {
+      "Name": "year",
+      "Type": "string",
+      "Restrictions": "Valor não nulo e maior que 150",
+      "Comment":"Valor referente ao ano em que foi feita a coleta dos dados.\n"
+    },
+    {
+      "Name": "state",
+      "Type": "string",
+      "Restrictions": "Um nome de estado pertencente ao território dos EUA",
+      "Comment":"Designação do estado onde foi feita a ferição de temperatura média mensal.\n"
+    },
+    {
+      "Name": "average_temp",
+      "Type": "float",
+      "Restrictions": "Valor decimal não nulo de -68°F à 92°F ",
+      "Comment": "Valor numérico referente a temperatura média mensal inferida.\n"
+    },
+    {
+      "Name": "monthly_mean_from_1901_to_2000",
+      "Type": "string",
+      "Restrictions": "Valor decimal não nulo de -68°F à 92°F ",
+      "Comment": "Valor médio base temperatura cosiderando o período de 1901 à 2000.\n"
+    },
+    {
+      "Name": "centroid_lon",
+      "Type": "float",
+      "Restrictions": "valor numérico compreendido no intervalo -180 à 180.",
+      "Comment": "Valor numérico referente a coordenada latitudinal da estação climática que realizou a coleta dos dados.\n"
+    },
+    {
+      "Name": "centroid_lat",
+      "Type": "float",
+      "Restrictions": "valor numérico compreendido no intervalo -90 à 90.",
+      "Comment": "Valor numérico referente a coordenada longitudinal da estação climática que realizou a coleta dos dados.\n"
+    }
+  ]
