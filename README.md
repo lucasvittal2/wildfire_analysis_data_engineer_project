@@ -25,3 +25,8 @@ Na última década os fenômenos de incêndios florestais, mas comumente mencion
   Porque as queimadas tem aumentado tanto em frequência e intensidade na última década 
 
   De modo a compreender todos os fatores a ela elencados. Para se chegar a esse compilado de respostas a ideia é usar os conhecimentos  aprendidos essa Sprint realizando a coleta dos dados, a sua modelagem de forma adequada  e construção de um catálogo de dados, a carga desses dados numa infraestrutura de nuvem e construção de um pipeline de tratamento,  a análise dos dados para finalmente se obter a resposta e com isso se tirar uma conclusão final acerca da principal resposta buscada.
+
+
+Para mais informações detalhadas leia o pdf em:
+
+[https://github.com/lucasvittal2/wildfire_analysis_data_engineer_project/blob/main/relatorio_mvp_sprintIII.pdf]( Wildfire Analysis Project Report)
